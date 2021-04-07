@@ -5,9 +5,6 @@ import "./Input.css";
 import FileUploadDialog from "../FileUploadDialog/FileUploadDialog";
 import { Paperclip } from "react-feather";
 
-
-
-// import FormButton from "../controls/buttons/FormButton";
 class Input extends Component {
   constructor() {
     super();
