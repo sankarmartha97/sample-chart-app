@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import SocketIOFileUpload from 'socketio-file-upload';
 
 import "./Input.css";
 import FileUploadDialog from "../FileUploadDialog/FileUploadDialog";
@@ -37,6 +38,8 @@ class Input extends Component {
     const { fileMessage } = this.state;
     const file = this.fileAttachment.current.files[0];
 
+    const siofu = new SocketIOFileUpload(socket);
+    siofu.listenOnInput(this.fileAttachment.current);
 
     let type = this.fileAttachment.current.files[0].type.split('/')[0];
 
