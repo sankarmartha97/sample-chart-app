@@ -241,6 +241,7 @@ html {
      ========================================================================== */
   
   .dialog-container {
+    z-index: 999;
     position: absolute;
     top: 0;
     right: 0;
@@ -253,6 +254,7 @@ html {
   }
   
   .dialog {
+    z-index: 999;
     width: 500px;
     background-color: white;
     display: flex;
